@@ -1,0 +1,71 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #app {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Light mode defaults */
+:root {
+  --bg-page: #f4f6fb;
+  --bg-sidebar: #1e1e2e;
+  --bg-card: #ffffff;
+  --text-primary: #1a1a2e;
+  --text-secondary: #6b7280;
+  --text-sidebar: #a0a8c0;
+  --text-sidebar-active: #ffffff;
+  --border-color: #e5e9f2;
+  --sidebar-width: 64px;
+  --header-height: 60px;
+  --accent: #6366f1;
+}
+
+/* Dark mode overrides */
+.dark-mode {
+  --bg-page: #0f0f1a;
+  --bg-sidebar: #12121e;
+  --bg-card: #1a1a2e;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --border-color: #2a2a3e;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+/* Utility */
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.page-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.tool-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
