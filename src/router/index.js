@@ -5,6 +5,7 @@ const JsonBeautifier = () => import('@/tools/json-beautifier/JsonBeautifier.vue'
 const RegexTester       = () => import('@/tools/regex-tester/RegexTester.vue')
 const UnicodeConverter  = () => import('@/tools/unicode-converter/UnicodeConverter.vue')
 const YamlJson          = () => import('@/tools/yaml-json/YamlJson.vue')
+const CronParser        = () => import('@/tools/cron-parser/CronParser.vue')
 
 export const tools = [
   {
@@ -48,6 +49,13 @@ export const tools = [
     icon: 'pi-arrow-right-arrow-left',
     path: '/yaml-json',
     component: YamlJson,
+  },
+  {
+    id: 'cron-parser',
+    name: 'Cron Parser',
+    icon: 'pi-calendar',
+    path: '/cron-parser',
+    component: CronParser,
   },
 ]
 
